@@ -1,3 +1,5 @@
+![screenshot](/screenshot.png)
+
 ## General Approach
 
 ### Read only
