@@ -35,7 +35,7 @@ When moving an event, moving closer to the edge of the timeline should initiate 
 Lastly, I did not give any consideration to performance on mobile where the cursor hover states don't give the user hints as to where they can interact with the timeline.  The easiest option would be to make mobile read only.
 
 ### Design decisions
-Most of the design inspiration came from playing with the airtable implementation.  As always, intentional trade offs due to time constraints can dictate how something turns out.  In this case, most things were left simple and without much styling because I prioritized building functionality.
+Most of the design inspiration came from playing with the atbl implementation.  As always, intentional trade offs due to time constraints can dictate how something turns out.  In this case, most things were left simple and without much styling because I prioritized building functionality.
 
 ### Testing
 The functions that are responsible for layout are very testable.  All of the positioning data is in the output of the layout function.  You could easily set up various begin and end date test cases to make sure things stack appropriately.  Other parts of the code are also testable like the utilities that I use for performing date calculations and enzyme provides a tool to make sure the markup looks the way it should given for instance an event that `isMouseDown: true` with a `start === end` should only have 1 tooltip.
